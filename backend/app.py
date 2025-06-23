@@ -12,8 +12,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 app = Flask(__name__)
-# CORS(app, supports_credentials=True, origins=["http://localhost:5173","https://adi-terminal.vercel.app"],allow_headers="*")
-CORS(app, origins="*", supports_credentials=True)
+CORS(app, origins=["https://adi-terminal.vercel.app", "http://localhost:5173"], supports_credentials=True)
 @app.route("/")
 def home():
     return "Adi's Bot Backend is up and running 🚀"
@@ -114,4 +113,4 @@ Your Reply (in JSON format — no markdown, no code blocks):
         return jsonify({ "type": "text", "content": f"❌ Error: {str(e)}" })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=5050)
