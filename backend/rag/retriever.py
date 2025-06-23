@@ -17,11 +17,11 @@ vectordb = Chroma(
     collection_name="adi-portfolio"
 )
 
-retriever = vectordb.as_retriever(search_kwargs={"k": 4})
+retriever = vectordb.as_retriever(search_kwargs={"k": 1})
 
 def get_context(query: str) -> str:
     docs = retriever.invoke(query)
-    print(f"🔍 Retrieved {len(docs)} docs for query: {query}")
-    for i, doc in enumerate(docs):
-        print(f"\n--- Doc {i+1} ---\n{doc.page_content}")
+    # print(f"🔍 Retrieved {len(docs)} docs for query: {query}")
+    # for i, doc in enumerate(docs):
+    #     print(f"\n--- Doc {i+1} ---\n{doc.page_content}")
     return "\n".join([doc.page_content for doc in docs])
