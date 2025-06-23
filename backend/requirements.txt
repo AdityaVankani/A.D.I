@@ -7,3 +7,4 @@ google-generativeai
 chromadb
 flask-cors
 langchain-chroma
+gunicorn

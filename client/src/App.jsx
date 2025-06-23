@@ -75,7 +75,7 @@ export default function App() {
     setMessages(newMessages);
 
     try {
-      const res = await fetch("http://localhost:5050/api/ask", {
+      const res = await fetch("https://a-d-i-backend.onrender.com/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: userInput })
