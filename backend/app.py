@@ -113,4 +113,4 @@ Your Reply (in JSON format — no markdown, no code blocks):
         return jsonify({ "type": "text", "content": f"❌ Error: {str(e)}" })
 
 if __name__ == "__main__":
-    app.run(debug=True,port=5050)
+    app.run(debug=True)

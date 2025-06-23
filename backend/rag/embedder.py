@@ -10,7 +10,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 load_dotenv()
 
 # Step 1: Load & split documents
-loader = TextLoader("backend/rag/docs/about_adi.txt")
+# loader = TextLoader("backend/rag/docs/about_adi.txt")
+loader = TextLoader("rag/docs/about_adi.txt")
 documents = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
