@@ -9,8 +9,10 @@ load_dotenv()
 
 embedding = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=os.getenv("GOOGLE_API_KEY"))
 
+persist_dir = "/tmp/chroma_db"
 vectordb = Chroma(
-    persist_directory=os.path.join(os.path.dirname(__file__), "chroma_db"),
+    # persist_directory=os.path.join(os.path.dirname(__file__), "chroma_db"),
+    persist_directory=persist_dir,
     embedding_function=embedding,
     collection_name="adi-portfolio"
 )
