@@ -17,7 +17,7 @@ vectordb = Chroma(
     collection_name="adi-portfolio"
 )
 
-retriever = vectordb.as_retriever(search_kwargs={"k": 1})
+retriever = vectordb.as_retriever(search_kwargs={"k": 4})
 
 def get_context(query: str) -> str:
     docs = retriever.invoke(query)
