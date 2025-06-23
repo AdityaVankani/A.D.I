@@ -13,7 +13,7 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 
 app = Flask(__name__)
 # CORS(app, supports_credentials=True, origins=["http://localhost:5173","https://adi-terminal.vercel.app"],allow_headers="*")
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, origins="*", supports_credentials=True)
 @app.route("/")
 def home():
     return "Adi's Bot Backend is up and running 🚀"
@@ -90,8 +90,8 @@ Your Reply (in JSON format — no markdown, no code blocks):
 """
 
     try:
-        # response = model.generate_content(prompt)
-        response="hello"
+        response = model.generate_content(prompt)
+        # response="hello"
         raw = response.text.strip()
 
         # 🔥 Strip code block formatting (```json\n...\n```)
