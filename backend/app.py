@@ -91,23 +91,24 @@ Your Reply (in JSON format — no markdown, no code blocks):
 
     try:
         # response = model.generate_content(prompt)
-        # raw = response.text.strip()
+        response="hello"
+        raw = response.text.strip()
 
-        # # 🔥 Strip code block formatting (```json\n...\n```)
-        # if raw.startswith("```json") and raw.endswith("```"):
-        #     raw = raw[7:-3].strip()
-        # elif raw.startswith("```") and raw.endswith("```"):
-        #     raw = raw[3:-3].strip()
+        # 🔥 Strip code block formatting (```json\n...\n```)
+        if raw.startswith("```json") and raw.endswith("```"):
+            raw = raw[7:-3].strip()
+        elif raw.startswith("```") and raw.endswith("```"):
+            raw = raw[3:-3].strip()
 
-        # # 🔍 Try to parse as JSON
-        # try:
-        #     output = json.loads(raw)
-        #     if not (isinstance(output, dict) and "type" in output and "content" in output):
-        #         output = { "type": "text", "content": raw }
-        # except:
-        #     output = { "type": "text", "content": raw }
+        # 🔍 Try to parse as JSON
+        try:
+            output = json.loads(raw)
+            if not (isinstance(output, dict) and "type" in output and "content" in output):
+                output = { "type": "text", "content": raw }
+        except:
+            output = { "type": "text", "content": raw }
 
-        # return jsonify(output)
+        return jsonify(output)
 
     except Exception as e:
         return jsonify({ "type": "text", "content": f"❌ Error: {str(e)}" })
