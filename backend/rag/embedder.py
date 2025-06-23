@@ -14,7 +14,7 @@ load_dotenv()
 loader = TextLoader("backend/rag/docs/about_adi.txt")
 documents = loader.load()
 
-splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
 docs = splitter.split_documents(documents)
 
 # Step 2: Gemini embeddings
