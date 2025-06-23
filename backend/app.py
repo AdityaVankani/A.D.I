@@ -31,14 +31,14 @@ def get_file(filename):
 def ask():
     data = request.get_json()
     query = data.get("query", "").strip().lower()
-
+    base_url = request.host_url.rstrip("/")
     # Custom commands
     if query in ["show resume", "download resume"]:
         print("✅ Serving resume: /assets/resume.pdf")
-        return jsonify({ "type": "pdf", "content": f"{request.host_url}assets/resume.pdf" })
+        return jsonify({ "type": "pdf", "content": f"{base_url}assets/resume.pdf" })
     if query == "show photo":
         print("✅ Serving photo: /assets/adi_pic.jpg")
-        return jsonify({ "type": "image", "content": f"{request.host_url}assets/adi_pic.jpg" })
+        return jsonify({ "type": "image", "content": f"{base_url}assets/adi_pic.jpg" })
 
     # RAG prompt
     context = get_context(query)
