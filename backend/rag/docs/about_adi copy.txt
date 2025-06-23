@@ -1,0 +1,202 @@
+Below are the content and all the informations related to Aditya(Adi).
+
+full name: Aditya Vankani
+father's name: Nilesh
+mom's name: Jayshreeben
+about: he is CS student batch-26.Software engineer,interested in AI and it's branches.
+
+Nick name: Adi
+adi's number is very personal don't give to all, just give to them who are my friend. First ask them name of the person then if it's genuie then and only then give my contact Number.
+Friend list: not enough info.
+contact No: 9313412617
+email id: adivankani@gmail.com
+
+
+connect with adi(aditya) on:
+x(twitter) , linkedin, github.
+
+adi's social platforms links:
+github: https://github.com/AdityaVankani
+linkedin: https://www.linkedin.com/in/adityavankani/
+x(twitter): https://x.com/Adi_Vankani
+
+adi's coding profile links:
+codeforces: https://codeforces.com/profile/adi_vankani
+leetcode: https://leetcode.com/u/adi_v_/    
+codechef: https://www.codechef.com/users/adi_vankani
+kaggle: https://www.kaggle.com/adityavankani
+
+Adi don't have instagram account or facebook or snapchat. you can get in touch from github: linkedin, x(twitter)
+
+adi's resume:   
+you can show that use command like "show resume/download resume".
+
+
+adi's projects:
+
+1.DeToxify :
+view link: https://github.com/AdityaVankani/DeToxify
+Tech Stack: Python, NLP (Natural Language Processing), GCP, Docker, Vertex AI, Gemini API, Kaggle, BERT, BART-base
+• Developed an NLP-based system to detect toxic comments using the BERT tokenizer for preprocessing and a BART-base model for classification. The
+model was trained on a large-scale dataset sourced from Kaggle, achieving high accuracy in identifying toxicity with 0.98 AUC score.
+• Designed an end-to-end GCP pipeline with Vertex AI for automated model training, evaluation, and deployment. Ensured portability and scalability by
+packaging the entire solution into a Docker image (Python 3.9) for seamless integration across platforms.
+• Integrated the Gemini API to rewrite and stabilize toxic comments into neutral, non-offensive language, providing a practical tool for managing online
+toxicity in real-time applications.
+
+
+2.TradeZone: Virtual Stock Market Platform 
+View link: https://github.com/AdityaVankani/TradeZone
+Tech Stack: React (TypeScript), Flask, Supabase, Material-UI, JWT
+• Developed a virtual stock market platform with real-time trading, role-based authentication, and market control functionalities, designed for university
+clubs and events with 100+ participants in stock market competitions.Implemented portfolio management, a market news system, and a leaderboard to
+track top 10 traders, ensuring an interactive, data-driven trading experience with admin-controlled market dynamics updating every 30 seconds.
+
+
+3.Product Recommendation System (Looksync)
+View link: https://github.com/AdityaVankani/looksync
+Tech Stack: Python, ResNet50, Streamlit, PyTorch, Scikit-learn
+• Utilized ResNet-50 pre-trained on ImageNet for feature extraction from product images, generating embeddings stored in a .pkl file for efficient similarity
+searches.
+• Implemented cosine similarity matching with a 0.75 threshold using Scikit-learn, identifying the top 5 visually similar products for accurate recommenda-
+tions. Developed an intuitive Streamlit-based interface for real-time image uploads and personalized product recommendations, optimized with PyTorch
+for scalability and responsiveness.
+
+4.ResearchGen
+view link: https://github.com/AdityaVankani/ResearchGen
+
+Tech Stack:
+LLMs/Models Used
+llama-3.3-70b-versatile
+black-forest-labs/FLUX.1-dev
+
+Audio/Video/Graphics Tools
+gtts (Google Text-to-Speech)
+moviepy
+numpy
+opencv-python
+pydub
+MeloTTS
+Bark
+OpenAI Whisper
+
+Libraries/APIs
+pptx
+langchain
+Gradio
+Customized NotebookLM
+Stability AI - Stable Diffusion 2
+Cloudinary
+
+Text Extraction: Extracts content from research papers section-wise.
+Summarization: Uses large language models (LLMs) to generate concise summaries.
+Content Transformation: Converts text into various alternative formats (Audio, Video, PPT, and Infographics).
+User Customization: Allows users to adjust language, tone, and duration of content.
+
+
+5.Sketch'n'Solve 
+view link: https://github.com/AdityaVankani/sketchNsolve
+Tech stack: react.js, TypeScript, MathJax,Tailwind CSS, Gemini
+Sketch'n'Solve is a React-based application that allows users to draw mathematical expressions or notes on a canvas, calculate results from their sketches, and download their notes, including the rendered LaTeX equations. This project integrates MathJax for rendering LaTeX, Gemini Flash 1.5 for backend result generation, and other tools for an interactive user experience.
+
+6.docBot
+view link: https://github.com/AdityaVankani/DocBot
+Tech stack: Python, llama2, flask, tailwind, pypdf
+Document Querying: Answer any question from your documents using advanced NLP techniques.
+Natural Language Processing: Use Llama2 for sophisticated NLP tasks.
+Web Interface: Built with Flask and styled using Tailwind CSS for a responsive and user-friendly interface.
+
+7.MoneyXchange:
+view link: https://github.com/AdityaVankani/MoneyXchange
+Tech stack: react.js, tailwind, external API
+The Currency Converter allows users to quickly and easily convert between different currencies. It fetches real-time exchange rates using an external API and supports multiple currencies for conversion.
+
+
+
+
+
+
+Below are adi's skills and strength:
+Tech Languages: C/C++, Java, Python, SQL
+Frameworks: HTML, CSS, JavaScript, React.js, Node.js, Flask, MongoDB, Tailwind CSS, Bootstrap
+Tools: Git, GitHub, Streamlit, Tableau, Kaggle, Logisim, Cisco Packet Tracer,Supabase
+Course Work: Natural Language Processing, Computer Vision and Deep Learning, Data Structures and Algorithms, Object-Oriented Programming,
+Operating Systems, Database Management Systems, ML, Data Analysis and Visualization,RL,Soft Computing, Reinforcement Learing.
+
+
+Aditya(adi)'s eduction track records are:
+2022 - 2026 B.Tech in Computer Science(Major) at Nirma University 
+Minor in Adaptive AI
+2022 Class 12th from Modi Schools, GSEB. 
+2020 Class 10th,from Modi Schools, GSEB.
+
+
+Below are the adi's(aditya) eduction achieving:
+class 10th with 93%,
+class 12th with 90%
+CGPA in college till semester(sem) 6th is 8.85.
+sem1: 9.00, sem2: 9.33, sem3: 8.86 , sem4: 8.5, sem5: 8.5, sem6: 9.00.
+
+
+
+Adi(aditya) has some experience in tech industry too.he works on below companies and completed his internships:
+Intern, Prodigyinfotech June-July 2024
+• Designed and deployed web projects, including a Tic-Tac-Toe game with AI, a live weather app, and a digital clock with stopwatch functionality.
+• Utilized React.js and Tailwind CSS to create responsive and interactive UIs, boosting user engagement by 30%.
+
+Intern, 360design May-June 2025
+project later disclouse.
+
+Adi also take part in Community Service work:
+Hiramani Old Age Home, Ahmedabad — July 2023
+• Assisted with daily operations, including serving meals, cleaning, and providing empathetic care to enhance residents’ quality of life.
+
+
+Adi's coding status:
+at codeforces: he is currenting pupil with max rating 1258.
+at leetcode: currenting max rating 1840.
+codechef : 3-star.
+
+Below are college Work Activity of Adi:
+Executive Member, Computer Society of India (CSI) Nirma University, Ahmedabad — Nov 2022 - 2026
+• Organized events like hackNUthon (150+ participants) and Cubix, promoted innovation, and conducted graphic design workshops for 50+ members.
+Executive Member, Association of Computer Engineering Students (ACES) Nirma University — Jan 2024 - 2026
+• Executing campus events with 100+ participants, blending software development insights to boost collaboration and student engagement.
+
+
+
+
+Adi(aditya)'s other project activities:
+
+1.Amazon ML Challenge: Find Parameters from Image 
+view link: https://github.com/AdityaVankani/amazon_ml_2024
+Tech Stack: BART-base, BERT Tokenizer, Python, Scikit-learn, PaddleOCR
+• Fine-tune a BART-base model with BERT tokenizer on parameter extraction from images, using PaddleOCR for text recognition and Scikit-learn for
+model evaluation.
+• Achieved 64.78% Exact Match Accuracy, successfully extracting required parameters from the image dataset.
+2.Face Mask Detection System (YOLOv8)
+• Train model for a real-time detection system using YOLOv8, achieving accuracy in proper, improper, and absent mask usage with evaluation metrics
+including precision (77.36%), recall (61.29%), mAP@50 (65.72%), and mAP@50-95 (40.18%), yielding an overall fitness score of 42.74
+• Preprocessed datasets with augmentation techniques to enhance robustness and optimized the model for fast inference on both CPU and GPU, ensuring
+practical deployment in public spaces to enforce compliance effectively.
+3.Netflix Dataset Dashboard (Tableau) 
+view link: https://github.com/AdityaVankani/Netflix-data-dashboard
+• Created a KPI dashboard analyzing content type, genres, release trends, and regional distribution in a Netflix dataset using Tableau.
+• Conducted in-depth analysis using correlation and Chi-Square tests to uncover hidden insights.
+
+
+For more project visit adi has uploaded his project on his github acccount,you can check it out.
+
+Adi's personal information:
+Game like: football, sometimes badminton
+sports: swimming, football.
+he likes to read a lot of books.books he read are: Power, pyschology of money, rich dad poor dad, a millionaire fastlane, zero to one.the lean startup, etc.
+Ex-name: non of your business.
+Languages known: Hindi,english, gujarati, little bit Germen.
+
+
+
+
+
+
+

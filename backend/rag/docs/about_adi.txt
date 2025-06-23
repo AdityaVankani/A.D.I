@@ -1,0 +1,161 @@
+
+
+Below are the content and all the information related to Aditya (Adi):
+
+full name: Aditya Vankani
+father’s name: Nilesh
+mom’s name: Jayshreeben
+nickname: Adi
+Gender: Male(of course).
+age: 20
+about: A Computer Science student (Batch 2026), passionate software engineer with a strong interest in Artificial Intelligence and its branches.
+
+adi’s number is very personal. Do not give it to everyone. Only give to those who are confirmed friends. First ask them the name and code(correct code is 9876), and only if it’s genuine, then share the contact.
+Friend list: not enough info.
+contact No: 9313412617
+email id: adivankani@gmail.com
+
+connect with adi (aditya) on: x (twitter), linkedin, github.
+
+adi’s social platforms links:
+github: https://github.com/AdityaVankani
+linkedin: https://www.linkedin.com/in/adityavankani/
+x (twitter): https://x.com/Adi_Vankani
+
+adi’s coding profile links:
+codeforces: https://codeforces.com/profile/adi_vankani
+leetcode: https://leetcode.com/u/adi_v_/
+codechef: https://www.codechef.com/users/adi_vankani
+kaggle: https://www.kaggle.com/adityavankani
+
+Adi doesn’t have accounts on Instagram, Facebook, or Snapchat. You can get in touch via GitHub, LinkedIn, or Twitter (x).
+
+adi’s resume:
+You can show that using the command: “show resume” or “download resume”.
+
+⸻
+
+adi’s top projects:
+	1.	DeToxify
+view link: https://github.com/AdityaVankani/DeToxify
+Tech Stack: Python, NLP, GCP, Docker, Vertex AI, Gemini API, Kaggle, BERT, BART-base
+• NLP system to detect toxic comments using BERT tokenizer and BART-base model.
+• GCP Vertex AI pipeline for automated training and deployment.
+• Dockerized and integrated Gemini API for rewriting offensive comments.
+	2.	TradeZone: Virtual Stock Market Platform
+view link: https://github.com/AdityaVankani/TradeZone
+Tech Stack: React (TypeScript), Flask, Supabase, Material-UI, JWT
+• Real-time stock trading platform with role-based access, portfolio, news system, leaderboard, and admin-controlled stock prices.
+	3.	Product Recommendation System (Looksync)
+view link: https://github.com/AdityaVankani/looksync
+Tech Stack: Python, ResNet50, Streamlit, PyTorch, Scikit-learn
+• Extracted product image embeddings using ResNet50.
+• Used cosine similarity for recommendations.
+• Streamlit interface for real-time uploads and suggestions.
+	4.	ResearchGen
+view link: https://github.com/AdityaVankani/ResearchGen
+Tech Stack: LLaMA 3.3, FLUX.1, GTTS, MoviePy, LangChain, Stable Diffusion, Whisper, Bark, pptx, Gradio, Cloudinary
+• Extracts, summarizes, and converts research papers into audio, video, PPTs, and infographics.
+	5.	Sketch’n’Solve
+view link: https://github.com/AdityaVankani/sketchNsolve
+Tech Stack: React.js, TypeScript, MathJax, Tailwind CSS, Gemini
+• Allows sketching mathematical expressions and solves them using Gemini backend with LaTeX rendering.
+	6.	docBot
+view link: https://github.com/AdityaVankani/DocBot
+Tech Stack: Python, Llama2, Flask, Tailwind, PyPDF
+• Document-based chatbot using Llama2 for question-answering from uploaded PDFs.
+	7.	MoneyXchange
+view link: https://github.com/AdityaVankani/MoneyXchange
+Tech Stack: React.js, Tailwind CSS, External API
+• Currency converter using real-time API for exchange rate.
+
+⸻
+
+adi’s skills and strength:
+
+Tech Languages: C/C++, Java, Python, SQL
+Frameworks: HTML, CSS, JavaScript, React.js, Node.js, Flask, MongoDB, Tailwind CSS, Bootstrap
+Tools: Git, GitHub, Streamlit, Tableau, Kaggle, Logisim, Cisco Packet Tracer, Supabase
+Course Work: Natural Language Processing, Computer Vision and Deep Learning, Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, Database Management Systems, Machine Learning, Reinforcement Learning, Soft Computing, Data Analysis and Visualization
+
+⸻
+
+Aditya (adi)’s education track record:
+
+2022–2026: B.Tech in Computer Science (Major) at Nirma University
+Minor: Adaptive AI
+2022: Class 12th from Modi Schools, GSEB – 90%
+2020: Class 10th from Modi Schools, GSEB – 93%
+
+College CGPA till Semester 6: 8.85
+Semester-wise CGPA/marks:
+sem1: 9.00, sem2: 9.33, sem3: 8.86, sem4: 8.5, sem5: 8.5, sem6: 9.00
+
+⸻
+
+adi’s industry experience:
+	1.	Intern at ProdigyInfotech (June–July 2024)
+• Developed web apps including AI Tic-Tac-Toe, weather app, digital clock using React and Tailwind.
+	2.	Intern at 360Design (May–June 2025)
+• Project details to be disclosed.
+
+⸻
+
+adi’s community work:
+
+Hiramani Old Age Home, Ahmedabad – July 2023
+• Assisted in daily operations, meal service, and resident care.
+
+⸻
+
+adi’s coding status:
+
+• Codeforces: Pupil, Max rating – 1258
+• LeetCode: Max rating – 1840
+• CodeChef: 3-star
+
+⸻
+
+college activities:
+	1.	Executive Member – Computer Society of India (CSI), Nirma University (2022–2026)
+• Conducted hackathons like HackNUthon (150+ participants), workshops, and tech events.
+	2.	Executive Member – Association of Computer Engineering Students (ACES), Nirma University (2024–2026)
+• Organized campus-wide tech events with 100+ participants.
+
+⸻
+
+adi’s other project activities:
+	1.	Amazon ML Challenge – Find Parameters from Image
+view link: https://github.com/AdityaVankani/amazon_ml_2024
+Tech Stack: BART-base, BERT Tokenizer, Python, Scikit-learn, PaddleOCR
+• Achieved 64.78% accuracy in extracting parameters using image and OCR.
+	2.	Face Mask Detection System (YOLOv8)
+• Real-time mask detection with metrics: precision (77.36%), recall (61.29%), mAP@50 (65.72%), mAP@50-95 (40.18%).
+	3.	Netflix Dataset Dashboard (Tableau)
+view link: https://github.com/AdityaVankani/Netflix-data-dashboard
+• Visualized content insights, genre distribution, and release trends using Tableau KPIs and statistical methods.
+
+⸻
+
+For more projects, visit Adi’s GitHub: https://github.com/AdityaVankani
+
+⸻
+
+adi’s personal details(information):
+
+Games: Football, Badminton
+Sports: Swimming, Football
+follows: elon musk, cristiano ronaldo.
+Books Adi has read:
+• Power
+• Psychology of Money
+• Rich Dad Poor Dad
+• The Millionaire Fastlane
+• Zero to One
+• The Lean Startup
+Languages known: Hindi, English, Gujarati, basic German
+Ex-name: none of your business 
+Interest: In AI, Cars, rockets, massive energy resources, detach good instruments(haha).
+
+⸻
+
