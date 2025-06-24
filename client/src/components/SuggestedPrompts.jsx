@@ -1,14 +1,14 @@
 // ask-adi/client/src/components/SuggestedPrompts.jsx
 export function SuggestedPrompts({ onSelect }) {
   const prompts = [
+    'Help',
     'Who is Aditya?',
     "Show me Aditya's projects.",
-    'What stack does Aditya use?',
+    'Give Project links',
     'What are Aditya\'s skills?',
     'What is Aditya\'s experience?',
-    'How can I contact Aditya?',
     'Adi\'s Personal interest',
-    'Help',
+    
     // 'What is Aditya\'s educational background?',
   ];
 

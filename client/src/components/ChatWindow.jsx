@@ -10,7 +10,7 @@ export function ChatWindow({ messages }) {
             msg.sender === 'user' ? 'text-green-200' : 'text-green-500'
           }`}
         >
-          <span className="pr-2">{msg.sender === 'user' ? 'You:' : 'A.D.I:'}</span>
+          <span className="pr-2">{msg.sender === 'user' ? 'You:' : 'A.D.I >'}</span>
 
           {/* Handle text responses */}
           {msg.type === 'text' && (
