@@ -1,3 +1,5 @@
+# backend/rag/retriever.py
+
 import os
 import shutil
 from dotenv import load_dotenv
@@ -6,11 +8,11 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 load_dotenv()
 
-# 1️⃣ Copy from repo to /tmp (writeable path on Render)
+# 1. Copy Chroma DB to Render's writeable directory (/tmp)
 def prepare_chroma():
     base_dir = os.path.dirname(__file__)  # /backend/rag
-    source_dir = os.path.join(base_dir, "chroma_db")  # your existing chroma DB
-    target_dir = "/tmp/chroma_db"
+    source_dir = os.path.join(base_dir, "chroma_db")  # repo directory
+    target_dir = "/tmp/chroma_db"  # Render-friendly
 
     if not os.path.exists(target_dir):
         shutil.copytree(source_dir, target_dir)
@@ -20,13 +22,13 @@ def prepare_chroma():
     
     return target_dir
 
-# 2️⃣ Use Gemini Embeddings
+# 2. Gemini Embedding Function
 embedding = GoogleGenerativeAIEmbeddings(
     model="models/embedding-001",
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
-# 3️⃣ Copy & Load DB from /tmp
+# 3. Load Vector DB
 chroma_path = prepare_chroma()
 
 vectordb = Chroma(
@@ -35,9 +37,9 @@ vectordb = Chroma(
     collection_name="adi-portfolio"
 )
 
-retriever = vectordb.as_retriever(search_kwargs={"k": 4})
+retriever = vectordb.as_retriever(search_kwargs={"k": 2})
 
-# 4️⃣ Actual RAG Context Fetch
+# 4. Query Interface
 def get_context(query: str) -> str:
     print("📥 Query:", query)
     docs = retriever.invoke(query)

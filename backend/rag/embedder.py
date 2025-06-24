@@ -1,4 +1,4 @@
-# rag/embedder.py
+# backend/rag/embedder.py
 
 import os
 from dotenv import load_dotenv
@@ -10,7 +10,6 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 load_dotenv()
 
 # Step 1: Load & split documents
-# loader = TextLoader("backend/rag/docs/about_adi.txt")
 loader = TextLoader("backend/rag/docs/about_adi.txt")
 documents = loader.load()
 
@@ -18,17 +17,19 @@ splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
 docs = splitter.split_documents(documents)
 
 # Step 2: Gemini embeddings
-embedding = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=os.getenv("GOOGLE_API_KEY"))
-print(embedding)
-# Step 3: Store in Chroma
-# persist_dir = "./chroma_db"
+embedding = GoogleGenerativeAIEmbeddings(
+    model="models/embedding-001",
+    google_api_key=os.getenv("GOOGLE_API_KEY")
+)
+
+# Step 3: Store in Chroma DB
+persist_dir = os.path.join(os.path.dirname(__file__), "chroma_db")
+
 vectordb = Chroma.from_documents(
     documents=docs,
     embedding=embedding,
-    persist_directory=os.path.join(os.path.dirname(__file__), "chroma_db"),
-    # persist_directory=persist_dir,
+    persist_directory=persist_dir,
     collection_name="adi-portfolio"
 )
 
-# vectordb.persist()
-print(f"✅ Embedded {len(docs)} chunks using Gemini embeddings.")
+print(f"✅ Embedded {len(docs)} chunks using Gemini embeddings and stored in {persist_dir}.")
