@@ -80,14 +80,15 @@ def ask():
     # Custom commands (already quick, not the issue)
     if query in ["show resume", "download resume"]:
         app.logger.info("Serving resume command.")
-        return jsonify({ "type": "pdf", "content": f"{base_url}assets/resume.pdf" })
+        return jsonify({ "type": "pdf", "content": f"{base_url}/assets/resume.pdf" })
     if query == "show photo":
         app.logger.info("Serving photo command.")
-        return jsonify({ "type": "image", "content": f"{base_url}assets/adi_pic.jpg" })
+        return jsonify({ "type": "image", "content": f"{base_url}/assets/adi_pic.jpg" })
 
     try:
         app.logger.info("Calling get_context...")
-        context = get_context(query)
+        # context = get_context(query)
+        context="hellooo checking"
         app.logger.info(f"Context retrieved (length: {len(context)}). Generating prompt...")
         prompt = f"""
         ... (your prompt) ...
@@ -102,7 +103,8 @@ def ask():
         {{ "type": "text" | "link", "content": "..." }}
         """
         app.logger.info("Prompt constructed. Calling model.generate_content...")
-        response = model.generate_content(prompt)
+        # response = model.generate_content(prompt)
+        response="helloo it's testing..."
         app.logger.info("Model response received. Processing...")
         raw = response.text.strip()
 
