@@ -37,7 +37,7 @@ vectordb = Chroma(
     collection_name="adi-portfolio"
 )
 
-retriever = vectordb.as_retriever(search_kwargs={"k": 2})
+retriever = vectordb.as_retriever(search_kwargs={"k": 3})
 
 # 4. Query Interface
 def get_context(query: str) -> str:
