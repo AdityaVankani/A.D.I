@@ -19,9 +19,10 @@ vectordb = Chroma(
 
 retriever = vectordb.as_retriever(search_kwargs={"k": 4})
 
-def get_context(query: str) -> str:
-    docs = retriever.invoke(query)
-    # print(f"🔍 Retrieved {len(docs)} docs for query: {query}")
-    # for i, doc in enumerate(docs):
-    #     print(f"\n--- Doc {i+1} ---\n{doc.page_content}")
-    return "\n".join([doc.page_content for doc in docs])
+# def get_context(query: str) -> str:
+#     docs = retriever.invoke(query)
+#     return "\n".join([doc.page_content for doc in docs])
+
+def get_context(query):
+    print("🧪 get_context() called with query:", query)
+    return "This is a mock context for testing. Aditya is a tech enthusiast, etc."
