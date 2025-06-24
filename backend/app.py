@@ -34,10 +34,10 @@ def get_file(filename):
 #     # Custom commands
 #     if query in ["show resume", "download resume"]:
 #         print("✅ Serving resume: /assets/resume.pdf")
-#         return jsonify({ "type": "pdf", "content": f"{base_url}assets/resume.pdf" })
+#         return jsonify({ "type": "pdf", "content": f"{base_url}/assets/resume.pdf" })
 #     if query == "show photo":
 #         print("✅ Serving photo: /assets/adi_pic.jpg")
-#         return jsonify({ "type": "image", "content": f"{base_url}assets/adi_pic.jpg" })
+#         return jsonify({ "type": "image", "content": f"{base_url}/assets/adi_pic.jpg" })
 
 #     # RAG prompt
 #     context = get_context(query)
@@ -78,12 +78,19 @@ def ask():
     # Custom commands
     if query in ["show resume", "download resume"]:
         print("✅ Serving resume: /assets/resume.pdf")
-        return jsonify({ "type": "pdf", "content": f"{base_url}assets/resume.pdf" })
+        return jsonify({ "type": "pdf", "content": f"{base_url}/assets/resume.pdf" })
     if query == "show photo":
         print("✅ Serving photo: /assets/adi_pic.jpg")
-        return jsonify({ "type": "image", "content": f"{base_url}assets/adi_pic.jpg" })
+        return jsonify({ "type": "image", "content": f"{base_url}/assets/adi_pic.jpg" })
     try:
-        return jsonify({ "type": "text", "content": "A.D.I is alive and talking. 🔥" })
+        context = get_context(query)
+        # prompt = f"... prompt creation ..."
+
+        # Instead of real Gemini call
+        return jsonify({
+            "type": "text",
+            "content": f"I'm A.D.I. Here's your answer based on context: {context}"
+        })
     except Exception as e:
         return jsonify({ "type": "text", "content": f"❌ Error: {str(e)}" })
 
