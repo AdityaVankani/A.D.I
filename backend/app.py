@@ -75,61 +75,21 @@ def ask():
     data = request.get_json()
     query = data.get("query", "").strip().lower()
     base_url = request.host_url.rstrip("/")
-    app.logger.info(f"Received query: {query}") # Added logging
-
-    # Custom commands (already quick, not the issue)
+    # Custom commands
     if query in ["show resume", "download resume"]:
-        app.logger.info("Serving resume command.")
-        return jsonify({ "type": "pdf", "content": f"{base_url}/assets/resume.pdf" })
+        print("✅ Serving resume: /assets/resume.pdf")
+        return jsonify({ "type": "pdf", "content": f"{base_url}assets/resume.pdf" })
     if query == "show photo":
-        app.logger.info("Serving photo command.")
-        return jsonify({ "type": "image", "content": f"{base_url}/assets/adi_pic.jpg" })
-
+        print("✅ Serving photo: /assets/adi_pic.jpg")
+        return jsonify({ "type": "image", "content": f"{base_url}assets/adi_pic.jpg" })
     try:
-        app.logger.info("Calling get_context...")
-        # context = get_context(query)
-        context="hellooo checking"
-        app.logger.info(f"Context retrieved (length: {len(context)}). Generating prompt...")
-        prompt = f"""
-        ... (your prompt) ...
-        Use the following context to answer questions:
-
-        {context}
-
-        User's Question:
-        {query}
-
-        Your Reply (in JSON format — no markdown, no code blocks):
-        {{ "type": "text" | "link", "content": "..." }}
-        """
-        app.logger.info("Prompt constructed. Calling model.generate_content...")
-        # response = model.generate_content(prompt)
-        response="helloo it's testing..."
-        app.logger.info("Model response received. Processing...")
-        raw = response.text.strip()
-
-        # ... (rest of your response parsing) ...
-        if raw.startswith("```json") and raw.endswith("```"):
-            raw = raw[7:-3].strip()
-        elif raw.startswith("```") and raw.endswith("```"):
-            raw = raw[3:-3].strip()
-
-        # 🔍 Try to parse as JSON
-        try:
-            output = json.loads(raw)
-            if not (isinstance(output, dict) and "type" in output and "content" in output):
-                output = { "type": "text", "content": raw }
-        except:
-            output = { "type": "text", "content": raw }
-
-        app.logger.info("Successfully processed response.")
-        return jsonify(output)
+        return jsonify({ "type": "text", "content": "A.D.I is alive and talking. 🔥" })
+    except Exception as e:
+        return jsonify({ "type": "text", "content": f"❌ Error: {str(e)}" })
 
         
 
-    except Exception as e:
-        app.logger.error(f"Error in /api/ask: {str(e)}", exc_info=True) # Log full traceback
-        return jsonify({ "type": "text", "content": f"❌ Error: {str(e)}" })
+    
 
 if __name__ == "__main__":
     app.run(debug=True,port=5050)
