@@ -4,7 +4,7 @@ export function SuggestedPrompts({ onSelect }) {
     'Help',
     'Who is Aditya?',
     "Show me Aditya's projects.",
-    'Give Project links',
+    'Give all Project links',
     'What are Aditya\'s skills?',
     'What is Aditya\'s experience?',
     'Adi\'s Personal interest',
