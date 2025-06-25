@@ -33,3 +33,4 @@ vectordb = Chroma.from_documents(
 )
 
 print(f"✅ Embedded {len(docs)} chunks using Gemini embeddings and stored in {persist_dir}.")
+print("process done.")
