@@ -75,7 +75,7 @@ export default function App() {
     setMessages(newMessages);
 
     try {
-      const res = await fetch("https://b60364fc-1174-4423-b730-f003f9fe1922-00-1dr3s2lagwugq.sisko.replit.dev/api/ask", {
+      const res = await fetch("https://adi-backend-413192125710.us-central1.run.app/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: userInput })
