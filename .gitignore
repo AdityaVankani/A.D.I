@@ -7,3 +7,5 @@ __pycache__/
 .env.*
 .DS_Store
 # chroma_db/
+backend/rag/about_adi.txt
+backend/rag/about_adicopy.txt
