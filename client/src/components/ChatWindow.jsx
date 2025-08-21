@@ -23,7 +23,7 @@ export function ChatWindow({ messages }) {
               <img
                 src={msg.content}
                 alt="Adi's PA Visual Output"
-                className="max-w-sm rounded-md border border-green-800 w-40 h-50"
+                className="max-w-sm rounded-md border border-green-800 w-50 h-50"
               />
             </div>
           )}
@@ -46,7 +46,7 @@ export function ChatWindow({ messages }) {
           {msg.type === 'pdf' && (
             <div className="mt-1">
               <a
-                href="https://drive.google.com/file/d/1y79mRTIvXjZx2hp0IJo1zJ4rJZx4_n3A/view?usp=sharing"
+                href="https://drive.google.com/file/d/1GIK8bcu3hwQqTEMOaVXwSo79XfQ3gJNL/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-400 underline"
