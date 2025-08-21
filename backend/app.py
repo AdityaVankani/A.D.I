@@ -36,8 +36,8 @@ def ask():
         print("✅ Serving resume: /assets/resume.pdf")
         return jsonify({ "type": "pdf", "content": f"{base_url}/assets/resume.pdf" })
     if query == "show photo":
-        print("✅ Serving photo: /assets/adi_pic.jpg")
-        return jsonify({ "type": "image", "content": f"{base_url}/assets/adi_pic.jpg" })
+        print("✅ Serving photo: /assets/adi_pic.png")
+        return jsonify({ "type": "image", "content": f"{base_url}/assets/adi_pic.png" })
 
     # RAG prompt
     context = get_context(query)
