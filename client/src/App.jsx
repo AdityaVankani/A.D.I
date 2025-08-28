@@ -43,7 +43,7 @@ export default function App() {
       setMessages(prev => [...prev, {
         sender: 'bot',
         type: 'text',
-        content: `v1.0.0 🤖`
+        content: `v3.0.0 🤖`
       }]);
       return;
     }
